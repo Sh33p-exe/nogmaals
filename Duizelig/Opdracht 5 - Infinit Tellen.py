@@ -3,10 +3,9 @@ aantal=0
 
 while checken:
     aantal+=1
-    vraag = input("zolang je geen quit in type zal het blijven vragen: ")
-    if vraag !="quit":
-        print("probeer nogmaal")
+    stop = input("Vul 'quit' in om deze zin te stoppen, zolang je dit niet doet zal deze zin zig erhalen: ")
+    if stop !="quit":
+        print("probeer het nog een keer")
     else:
-        print("u heeft",aantal,"keer geprobeert") 
+        print("je hebt het ",aantal,"keer geprobeert") 
         checken = False 
-
